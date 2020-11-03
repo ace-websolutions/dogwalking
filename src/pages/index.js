@@ -1,5 +1,7 @@
 import React from "react"
 
+import "../styles/App.scss"
+
 import SEO from "../components/seo"
 import Header from "../components/header"
 import Services from "../components/services"
