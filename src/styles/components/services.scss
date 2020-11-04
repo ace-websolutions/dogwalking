@@ -1,0 +1,119 @@
+#services {
+  .container {
+    header {
+      padding: 4em 0em;
+      background: #fff;
+      text-align: center;
+      div {
+        width: 95%;
+        margin: 0 auto;
+        h2 {
+          font-size: 2.25em;
+          font-weight: 100;
+          margin: 0;
+          line-height: 1.5em;
+          color: #666;
+        }
+        p {
+          margin: 2em 0 0 0;
+          padding: 0;
+          text-align: center;
+          font-size: 0.9em;
+        }
+      }
+    }
+    .services {
+      padding: 4em 0em;
+      background: $gradient;
+      .services-container {
+        margin: 0 auto;
+        max-width: 100%;
+        position: relative;
+        padding: 0 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+          width: 33.3333333%;
+          padding: 0 0.25em;
+          text-align: center;
+          section {
+            position: relative;
+            span {
+              background: rgba(255, 255, 255, 0.15);
+              box-shadow: inset 0 0 0 1px #fff;
+              height: 10em;
+              width: 10em;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 0 auto;
+              border-radius: 50%;
+              position: relative;
+              margin-bottom: 6em;
+
+              &::before {
+                content: "";
+                position: absolute;
+                bottom: -49%;
+                left: 50%;
+                margin-left: -0.325em;
+                width: 0.65em;
+                height: 0.65em;
+                display: block;
+                border-radius: 100%;
+                background: rgba(255, 255, 255, 0.5);
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: -43%;
+                width: 1px;
+                height: 4.35em;
+                margin-left: -0.5px;
+                background: rgba(255, 255, 255, 0.5);
+              }
+              svg {
+                height: 5.5em;
+                width: 5.5em;
+                fill: #fff;
+              }
+            }
+            header {
+              background: transparent;
+              padding: 0;
+              h3 {
+                font-weight: 100;
+                line-height: 1.5em;
+                font-size: 1.5em;
+                color: #fff;
+                margin: 0;
+              }
+            }
+            p {
+              color: rgba(255, 255, 255, 0.65);
+              text-align: center;
+              padding: 0 0.5em;
+            }
+          }
+        }
+      }
+      footer {
+        margin-top: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          background: rgba(255, 255, 255, 0.15);
+          box-shadow: inset 0 0 0 1px #fff;
+          color: #fff;
+          padding: 0.85em 3em;
+          border-radius: 0.25em;
+          text-decoration: none;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
