@@ -1,39 +1,82 @@
 import React from "react"
+import {
+  FaTwitter,
+  FaFacebook,
+  FaInstagram,
+  FaPinterest,
+  FaTelegram,
+} from "react-icons/fa"
 
 const Footer = () => (
   <section id="footer">
-    <ul>
+    <ul className="social-container">
       <li>
         <a href="#">
-          <span>Twitter</span>
+          <FaTwitter />
         </a>
       </li>
       <li>
         <a href="#">
-          <span>Facebook</span>
+          <FaFacebook />
         </a>
       </li>
       <li>
         <a href="#">
-          <span>Instagram</span>
+          <FaInstagram />
         </a>
       </li>
       <li>
         <a href="#">
-          <span>Dribbble</span>
+          <FaPinterest />
         </a>
       </li>
       <li>
         <a href="#">
-          <span>GitHub</span>
+          <FaTelegram />
         </a>
       </li>
     </ul>
-    <div>
-      <ul>
-        <li>&copy; Untitled. All rights reserved.</li>
+    <div className="footer-info">
+      <ul className="info-contents">
+        <li>&copy; Ace Web Solutions. All rights reserved</li>
         <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
+          Design:{" "}
+          <a
+            href="http://html5up.net"
+            title="HTML5 UP"
+            rel="noreferrer"
+            target="_blank"
+          >
+            HTML5 UP
+          </a>
+        </li>
+        <li>
+          SVG:{" "}
+          <a
+            href="https://www.flaticon.com/authors/photo3idea-studio"
+            title="SVG Author"
+            rel="noreferrer"
+            target="_blank"
+          >
+            "photo3idea_studio"{" "}
+          </a>
+          <a
+            href="https://www.flaticon.com/authors/freepik"
+            title="SVG Author"
+            rel="noreferrer"
+            target="_blank"
+          >
+            and "Freepik"{" "}
+          </a>
+          from{" "}
+          <a
+            href="https://www.flaticon.com/"
+            title="Flaticon"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Flaticon
+          </a>
         </li>
       </ul>
     </div>
@@ -41,10 +84,3 @@ const Footer = () => (
 )
 
 export default Footer
-
-{
-  /* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */
-}

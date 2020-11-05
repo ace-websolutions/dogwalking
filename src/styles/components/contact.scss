@@ -1,0 +1,90 @@
+#contact {
+  margin: 0;
+  .container {
+    header {
+      padding: 4em 0em;
+      background: #fff;
+      text-align: center;
+      div {
+        width: 95%;
+        margin: 0 auto;
+        h2 {
+          font-size: 2.25em;
+          font-weight: 100;
+          margin: 0;
+          line-height: 1.5em;
+          color: #666;
+        }
+        p {
+          margin: 2em 0 0 0;
+          padding: 0;
+          text-align: center;
+          font-size: 0.9em;
+        }
+      }
+    }
+    .contact {
+      form {
+        margin: 0 auto;
+        width: 720px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        div {
+          width: 50%;
+          padding: 0 0.5em;
+          input {
+            width: 100%;
+            display: block;
+            box-shadow: inset 0 0 0 1px #e6e6e6;
+            background: #f8f8f8;
+            padding: 0.85em 1em 0.85em 1em;
+            border-radius: 0.25em;
+            border: 0;
+            font-weight: 300;
+            font-size: 13pt;
+            color: #888;
+            font-family: "Roboto", sans-serif;
+          }
+        }
+        .textarea {
+          width: 100%;
+          padding: 1em 0.5em;
+          textarea {
+            width: 100%;
+            min-height: 13em;
+            display: block;
+            box-shadow: inset 0 0 0 1px #e6e6e6;
+            background: #f8f8f8;
+            padding: 0.85em 1em 0.85em 1em;
+            border-radius: 0.25em;
+            border: 0;
+            font-size: 13pt;
+            line-height: 1.65em;
+            color: #888;
+            font-family: "Roboto", sans-serif;
+          }
+        }
+        .buttons {
+          width: 50%;
+          display: flex;
+          input {
+            color: #fff;
+            margin: 0 0.25em;
+            cursor: pointer;
+            border: none;
+            box-shadow: none;
+          }
+          input[type="submit"] {
+            background: $primary;
+          }
+          input[type="reset"] {
+            background: #666;
+          }
+        }
+      }
+    }
+  }
+}

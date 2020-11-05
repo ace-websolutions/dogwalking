@@ -1,6 +1,6 @@
 # Portfolio Project
 
-Sample website for a dog walking type business.
+Example layout and flow for portfolio.
 
 ### Skills Practiced
 

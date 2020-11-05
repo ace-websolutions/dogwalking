@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Dog Walkers`,
+    description: `Sample website for a dog walking business. Example layout and flow for portfolio`,
+    author: `Ace Web Solutions`,
   },
   plugins: [
     `gatsby-plugin-sass`,

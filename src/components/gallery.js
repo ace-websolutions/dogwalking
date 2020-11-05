@@ -1,23 +1,40 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-const Gallery = () => (
-  <section id="gallery">
-    <header>
-      <div>
-        <h2>Euismod sed feugiat lorem tempus magna</h2>
-        <p>
-          Gravida dis placerat lectus ante vel nunc euismod eget ornare varius
-          gravida euismod lorem ipsum dolor sit amet consequat
-          <br />
-          feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare
-          varius gravida euismod lorem ipsum dolor sit amet.
-        </p>
-      </div>
-    </header>
-    <div>
-      <div>
-        <div>
+const Gallery = () => {
+  const data = useStaticQuery(graphql`
+    query Images {
+      image: allFile(filter: { relativeDirectory: { eq: "gallery" } }) {
+        nodes {
+          id
+          childImageSharp {
+            fluid(maxWidth: 700, maxHeight: 700) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <section id="gallery">
+      <div className="container">
+        <header>
           <div>
+            <h2>Euismod sed feugiat lorem tempus magna</h2>
+            <p>
+              Gravida dis placerat lectus ante vel nunc euismod eget ornare
+              varius gravida euismod lorem ipsum dolor sit amet consequat
+              <br />
+              feugiat. Gravida dis placerat lectus ante vel nunc euismod eget
+              ornare varius gravida euismod lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </header>
+        <div className="gallery">
+          <div className="gallery-container">
             <section>
               <h3>Augue vivamus sed ipsum commodo lorem dolor</h3>
               <p>
@@ -25,8 +42,7 @@ const Gallery = () => (
                 sodales. Diam tempor dui lacinia eget ornare varius gravida.
                 Gravida dis placerat lectus ante vel nunc euismod est turpis
                 sodales. Diam tempor dui lacinia accumsan vivamus augue cubilia
-                vivamus nisi eu eget ornare varius gravida euismod. Gravida dis
-                lorem ipsum dolor placerat magna tempus feugiat.
+                vivamus nisi eu eget ornare varius gravida euismod.
               </p>
               <p>
                 Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
@@ -34,48 +50,24 @@ const Gallery = () => (
                 ornare varius gravida dolore euismod lorem ipsum dolor.
               </p>
               <footer>
-                <a href="#third">Accumsan nisi tempor</a>
+                <a href="#third">Accumsan nisi</a>
               </footer>
             </section>
-          </div>
-          <div>
-            <div>
-              <div>
-                <a href="#">
-                  <img src="images/pic01.jpg" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="images/pic02.jpg" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="images/pic03.jpg" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="images/pic04.jpg" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="images/pic05.jpg" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="images/pic06.jpg" alt="" />
-                </a>
-              </div>
+            <div className="images-container">
+              {data.image.nodes.map(img => (
+                <div key={img.id}>
+                  <Img
+                    fluid={img.childImageSharp.fluid}
+                    objectPosition="50% 50%"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 export default Gallery
