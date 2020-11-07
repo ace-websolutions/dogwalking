@@ -1,15 +1,15 @@
 import React from "react"
 
-const Header = ({ title, text, subtext }) => {
+const Header = ({ title, text, lineTwo, section }) => {
   return (
-    <div className="container">
+    <div id={`#${section}-header`} className={`${section}-header container`}>
       <header>
-        <div>
-          <h2>{title}</h2>
-          <p>
+        <div className="header-div">
+          <h2 className="header-title">{title}</h2>
+          <p className="header-text">
             {text}
             <br />
-            {subtext}
+            {lineTwo}
           </p>
         </div>
       </header>

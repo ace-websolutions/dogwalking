@@ -1,29 +1,8 @@
 #contact {
   margin: 0;
   .container {
-    header {
-      padding: 4em 0em;
-      background: #fff;
-      text-align: center;
-      div {
-        width: 95%;
-        margin: 0 auto;
-        h2 {
-          font-size: 2.25em;
-          font-weight: 100;
-          margin: 0;
-          line-height: 1.5em;
-          color: #666;
-        }
-        p {
-          margin: 2em 0 0 0;
-          padding: 0;
-          text-align: center;
-          font-size: 0.9em;
-        }
-      }
-    }
     .contact {
+      margin-bottom: 6em;
       form {
         margin: 0 auto;
         width: 720px;
