@@ -18,18 +18,6 @@ const About = () => {
   return (
     <section id="about">
       <div className="container">
-        <header>
-          <div>
-            <h2>Ornare varius lorem ipsum ante lectus</h2>
-            <p>
-              Gravida dis placerat lectus ante vel nunc euismod eget ornare
-              varius gravida euismod lorem ipsum dolor sit amet consequat
-              <br />
-              feugiat. Gravida dis placerat lectus ante vel nunc euismod eget
-              ornare varius gravida euismod lorem ipsum dolor sit amet.
-            </p>
-          </div>
-        </header>
         <div className="about">
           <div className="image-container">
             <Img fluid={data.file.childImageSharp.fluid} />

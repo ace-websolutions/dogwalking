@@ -1,31 +1,12 @@
 #services {
   margin: 0;
+  background: $gradient;
+  @include media(">desktop") {
+    padding: 4em 0;
+  }
   .container {
-    header {
-      padding: 4em 0em;
-      background: #fff;
-      text-align: center;
-      div {
-        width: 95%;
-        margin: 0 auto;
-        h2 {
-          font-size: 2.25em;
-          font-weight: 100;
-          margin: 0;
-          line-height: 1.5em;
-          color: #666;
-        }
-        p {
-          margin: 2em 0 0 0;
-          padding: 0;
-          text-align: center;
-          font-size: 0.9em;
-        }
-      }
-    }
     .services {
       padding: 4em 0em;
-      background: $gradient;
       .services-container {
         margin: 0 auto;
         max-width: 100%;
@@ -34,10 +15,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include media("<=phone") {
+          flex-direction: column;
+        }
         div {
           width: 33.3333333%;
           padding: 0 0.25em;
           text-align: center;
+          @include media("<=phone") {
+            width: 80%;
+            margin: 2em 0;
+          }
           section {
             position: relative;
             span {

@@ -1,31 +1,9 @@
 #gallery {
   margin: 0;
+  background: $gradient-two;
   .container {
-    header {
-      padding: 4em 0em;
-      background: #fff;
-      text-align: center;
-      div {
-        width: 95%;
-        margin: 0 auto;
-        h2 {
-          font-size: 2.25em;
-          font-weight: 100;
-          margin: 0;
-          line-height: 1.5em;
-          color: #666;
-        }
-        p {
-          margin: 2em 0 0 0;
-          padding: 0;
-          text-align: center;
-          font-size: 0.9em;
-        }
-      }
-    }
     .gallery {
       padding: 4em 2em;
-      background: $gradient-two;
       .gallery-container {
         display: flex;
         flex-wrap: wrap;
@@ -36,6 +14,14 @@
           width: 33.3333333%;
           padding: 4em 0.5em;
           margin: 0;
+          @include media(">=desktop") {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          @include media("<=phone") {
+            width: 100%;
+          }
           h3 {
             margin: 0 0 1em 0;
             font-weight: 100;
@@ -71,6 +57,9 @@
           flex-wrap: wrap;
           justify-content: center;
           align-items: stretch;
+          @include media("<=phone") {
+            width: 100%;
+          }
           div {
             width: 50%;
             padding: 0.5em;

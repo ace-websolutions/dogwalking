@@ -1,42 +1,19 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
 
-const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "golden.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
-
+const Header = ({ title, text, subtext }) => {
   return (
-    <section id="header">
-      <BackgroundImage
-        className="header-image"
-        fluid={data.file.childImageSharp.fluid}
-      >
-        <div className="container">
-          <div>
-            <header>
-              <h1>Dog Walkers</h1>
-              <p>
-                A sample website made for my portfolio{" "}
-                <a href="http://acewebsolutions.io">here</a>
-              </p>
-            </header>
-            <footer>
-              <a href="#">Take a look around</a>
-            </footer>
-          </div>
+    <div className="container">
+      <header>
+        <div>
+          <h2>{title}</h2>
+          <p>
+            {text}
+            <br />
+            {subtext}
+          </p>
         </div>
-      </BackgroundImage>
-    </section>
+      </header>
+    </div>
   )
 }
 

@@ -1,31 +1,9 @@
 #about {
   margin: 0;
+  background: $gradient-three;
   .container {
-    header {
-      padding: 4em 0em;
-      background: #fff;
-      text-align: center;
-      div {
-        width: 95%;
-        margin: 0 auto;
-        h2 {
-          font-size: 2.25em;
-          font-weight: 100;
-          margin: 0;
-          line-height: 1.5em;
-          color: #666;
-        }
-        p {
-          margin: 2em 0 0 0;
-          padding: 0;
-          text-align: center;
-          font-size: 0.9em;
-        }
-      }
-    }
     .about {
       padding: 4em 2em;
-      background: $gradient-three;
       .image-container {
         padding: 0.5em;
         border-radius: 0.5em;
@@ -38,8 +16,14 @@
         padding: 2em 0;
         display: flex;
         align-content: stretch;
+        @include media("<=phone") {
+          flex-wrap: wrap;
+        }
         div {
           padding: 0 0.75em;
+          @include media("<=phone") {
+            width: 100%;
+          }
           h3 {
             margin: 0 0 1em 0;
             font-weight: 100;

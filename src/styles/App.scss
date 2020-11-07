@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;600;700&display=swap");
 @import "./variables.scss";
 @import "./breakpoints.scss";
+@import "./components/landing.scss";
 @import "./components/header.scss";
 @import "./components/services.scss";
 @import "./components/gallery.scss";
@@ -39,14 +40,10 @@ article:last-child {
 }
 
 .container {
-  width: 1080px;
-  min-width: 1080px;
+  width: 1280px;
+  min-width: 1280px;
   margin: 0 auto;
   height: 100%;
-  // @include media("<=1560px") {
-  //   width: 1280px;
-  //   min-width: 1280px;
-  // }
   @include media("<=desktop") {
     width: 1080px;
     min-width: 1080px;

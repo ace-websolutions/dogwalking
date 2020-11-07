@@ -43,6 +43,12 @@
       font-size: 0.75em;
       line-height: 1em;
       list-style: none;
+      margin-top: 6em;
+      max-width: 100%;
+      @include media("<=phone") {
+        flex-direction: column;
+        margin-top: 4em;
+      }
       li {
         box-sizing: border-box;
         a {
@@ -52,16 +58,27 @@
       }
       li:first-child {
         padding: 0 1em 0 0;
+        @include media("<=phone") {
+          padding: 0 0 1em 0;
+        }
       }
       li:not(:first-child) {
         border-left: dotted 1px rgba(0, 0, 0, 0.5);
         box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
         padding: 0 1em 0 1em;
+        @include media("<=phone") {
+          padding: 1em 0;
+          border: none;
+        }
       }
       li:last-child {
         border-left: dotted 1px rgba(0, 0, 0, 0.5);
         box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
         padding: 0 0 0 1em;
+        @include media("<=phone") {
+          padding: 1em 0 0 0;
+          border: none;
+        }
       }
     }
   }

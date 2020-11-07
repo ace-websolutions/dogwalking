@@ -1,43 +1,23 @@
-#header {
-  margin: 0;
-  .header-image {
-    position: relative;
-    background-color: $primary;
-    padding: 14em 0 14em 0;
+.container {
+  header {
+    padding: 4em 0em;
+    background: #fff;
     text-align: center;
-    color: #fff;
-    header {
-      display: block;
-      text-align: center;
-      h1 {
+    div {
+      width: 95%;
+      margin: 0 auto;
+      h2 {
         font-size: 2.25em;
-        line-height: 1.25rem;
         font-weight: 100;
+        margin: 0;
+        line-height: 1.5em;
+        color: #666;
       }
       p {
-        margin-top: 1.25em;
-        font-weight: 100;
+        margin: 2em 0 0 0;
         padding: 0;
-        font-size: 1.25em;
-        line-height: 1.5em;
         text-align: center;
-        a {
-          text-decoration: none;
-          color: #fff;
-          border-bottom: dotted 1px rgba(255, 255, 255, 0.507);
-        }
-      }
-    }
-    footer {
-      padding-top: 1.5em;
-      a {
-        background: rgba(255, 255, 255, 0.15);
-        box-shadow: inset 0 0 0 1px #fff;
-        color: #fff;
-        padding: 0.85em 3em;
-        border-radius: 0.25em;
-        text-decoration: none;
-        font-weight: 100;
+        font-size: 0.9em;
       }
     }
   }

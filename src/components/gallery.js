@@ -21,18 +21,6 @@ const Gallery = () => {
   return (
     <section id="gallery">
       <div className="container">
-        <header>
-          <div>
-            <h2>Euismod sed feugiat lorem tempus magna</h2>
-            <p>
-              Gravida dis placerat lectus ante vel nunc euismod eget ornare
-              varius gravida euismod lorem ipsum dolor sit amet consequat
-              <br />
-              feugiat. Gravida dis placerat lectus ante vel nunc euismod eget
-              ornare varius gravida euismod lorem ipsum dolor sit amet.
-            </p>
-          </div>
-        </header>
         <div className="gallery">
           <div className="gallery-container">
             <section>
