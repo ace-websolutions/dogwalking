@@ -11,8 +11,8 @@ const Gallery = () => {
   useEffect(() => {
     const tlGallery = gsap.timeline({
       scrollTrigger: {
-        trigger: "#gallery",
-        start: "top center",
+        trigger: "#gallery-header",
+        start: "center center",
       },
       defaults: { duration: 1.2, ease: "power2.out", opacity: 0 },
     })

@@ -2,7 +2,7 @@ import React from "react"
 
 const Header = ({ title, text, lineTwo, section }) => {
   return (
-    <div id={`#${section}-header`} className={`${section}-header container`}>
+    <div id={`${section}-header`} className={`${section}-header container`}>
       <header>
         <div className="header-div">
           <h2 className="header-title">{title}</h2>

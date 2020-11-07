@@ -12,8 +12,8 @@ const Services = () => {
   useEffect(() => {
     const tlServices = gsap.timeline({
       scrollTrigger: {
-        trigger: "#services",
-        start: "top center",
+        trigger: "#services-header",
+        start: "center center",
       },
       defaults: { ease: "power2.out", duration: 1.6, stagger: 0.3 },
     })

@@ -11,8 +11,8 @@ const About = () => {
   useEffect(() => {
     const tlAbout = gsap.timeline({
       scrollTrigger: {
-        trigger: "#about",
-        start: "top center",
+        trigger: "#about-header",
+        start: "center center",
       },
       defaults: { duration: 1.2, ease: "power2.out" },
     })

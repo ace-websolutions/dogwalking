@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Dog Walkers`,
-    description: `Sample website for a dog walking business. Example layout and flow for portfolio`,
+    title: `Sample Business`,
+    description: `Sample website for a business involving dogs. Example layout and flow for portfolio`,
     author: `Ace Web Solutions`,
   },
   plugins: [

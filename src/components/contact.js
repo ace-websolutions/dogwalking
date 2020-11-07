@@ -8,7 +8,7 @@ const Contact = () => {
   useEffect(() => {
     const tlContact = gsap.timeline({
       scrollTrigger: {
-        trigger: "#contact",
+        trigger: "#contact-header",
         start: "top center",
       },
       defaults: { duration: 1.2, ease: "power2.out" },

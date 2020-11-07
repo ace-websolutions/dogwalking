@@ -43,6 +43,7 @@ article:last-child {
   min-width: 1280px;
   margin: 0 auto;
   height: 100%;
+  overflow: hidden;
   @include media("<=desktop") {
     width: 1080px;
     min-width: 1080px;
