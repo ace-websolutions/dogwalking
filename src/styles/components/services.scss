@@ -40,7 +40,7 @@
               border-radius: 50%;
               position: relative;
               margin-bottom: 6em;
-              rotate: 180deg;
+              // rotate: 180deg;
               &:before {
                 content: "";
                 position: absolute;
@@ -67,7 +67,7 @@
                 height: 5.5em;
                 width: 5.5em;
                 fill: #fff;
-                rotate: 180deg;
+                // rotate: 180deg;
               }
             }
             header {

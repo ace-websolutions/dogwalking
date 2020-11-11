@@ -22,7 +22,7 @@ const Landing = () => {
           opacity: 0,
           y: -200,
         },
-        ">-.5"
+        ">-.8"
       )
       .from(
         ".landing-footer",
@@ -30,7 +30,7 @@ const Landing = () => {
           y: 50,
           opacity: 0,
         },
-        ">-.5"
+        ">-.6"
       )
   }, [])
 
@@ -38,7 +38,7 @@ const Landing = () => {
     query {
       file(relativePath: { eq: "golden.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

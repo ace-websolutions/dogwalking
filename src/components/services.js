@@ -30,23 +30,23 @@ const Services = () => {
         ".service span",
         {
           opacity: 0,
-          y: 200,
+          y: -200,
           ease: "bounce",
         },
         0.6
       )
-      .to(
+      .from(
         ".service span",
         {
-          rotate: "180deg",
+          rotate: "-180deg",
           duration: 2,
         },
         1.4
       )
-      .to(
+      .from(
         ".service svg",
         {
-          rotate: "180deg",
+          rotate: "-180deg",
           duration: 2,
         },
         1.4

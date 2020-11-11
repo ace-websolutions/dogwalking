@@ -3,6 +3,7 @@ module.exports = {
     title: `Sample Business`,
     description: `Sample website for a business involving dogs. Example layout and flow for portfolio`,
     author: `Ace Web Solutions`,
+    keywords: ['webdevelopment', 'dog', 'sample','web', 'portfolio', 'acewebsolutions', 'website', 'freelance', 'ace' ]
   },
   plugins: [
     `gatsby-plugin-sass`,
